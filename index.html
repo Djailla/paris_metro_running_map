@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/iosCheckbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/iosCheckbox.js"></script>
+		<script type="text/javascript">
+
+			jQuery(document).ready(function(){
+				jQuery(function ($){
+					$(".ios").iosCheckbox();
+				});
+
+				jQuery('#hideshow_stade').change(function() {
+					jQuery('#stade').toggle('slow');
+				});
+				jQuery('#hideshow_parc').change(function() {
+					jQuery('#parc').toggle('slow');
+				});
+				jQuery('#hideshow_shop').change(function() {
+					jQuery('#shop').toggle('slow');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="map_layer">
+			<img id="metro_background" src="images/metro.png"/>
+			<img id="metro_title" src="images/title.png"/>
+		</div>
+		<div class="map_layer" id="stade">
+			<img id="stade_items" src="images/stade_items.png"/>
+			<img id="stade_title" src="images/stade_title.png"/>
+		</div>
+		<div class="map_layer" id="parc">
+			<img id="parc_items" src="images/parc_items.png"/>
+			<img id="parc_title" src="images/parc_title.png"/>
+		</div>
+		<div class="map_layer" id="shop">
+			<img id="shop_items" src="images/shop_items.png"/>
+			<img id="shop_title" src="images/shop_title.png"/>
+		</div>
+		<div class="floating-box">
+			Menu
+			<p>
+				Parc et Jardins <input type="checkbox" class="ios" id='hideshow_parc' checked><br>
+				Magasins spécialisés <input type="checkbox" class="ios" id='hideshow_shop' checked><br>
+				Stades et pistes<input type="checkbox" class="ios" id='hideshow_stade' checked /><br>
+			</p>
+		</div>
+	</body>
+</html>

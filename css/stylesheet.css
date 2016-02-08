@@ -1,0 +1,31 @@
+body {
+    background-color: #FFFDEA;
+    font-family: 'BebasNeueRegular';
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px #666666;
+}
+
+.map_layer {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+}
+
+.map_layer img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.floating-box {
+    position: fixed;
+    right: 0;
+    width: 10%;
+    height: 200px;
+    margin: 3px;
+    border: 3px solid #73AD21;
+    background-color: #FFFFFF;
+}
